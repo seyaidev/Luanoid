@@ -1,3 +1,6 @@
+local Dependencies = require(script.Parent.Dependencies)
+local EnumList = require(Dependencies.EnumList)
+
 --[=[
     @class CharacterState
 ]=]
@@ -25,7 +28,7 @@
     @within CharacterState
     @prop Dead EnumItem
 ]=]
-return require(script.Parent.Parent.EnumList).new("CharacterState", {
+return EnumList.new("CharacterState", {
     "Physics",
     "Idling",
     "Walking",

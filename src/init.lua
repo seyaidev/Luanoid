@@ -1,7 +1,9 @@
 local Players = game:GetService("Players")
 
-local Promise = require(script.Parent.Promise)
-local Signal = require(script.Parent.Signal)
+local Dependencies = require(script.Dependencies)
+local Promise = require(Dependencies.Promise)
+local Signal = require(Dependencies.Signal)
+
 local t = require(script.Types).Luanoid
 local Animator = require(script.Animator)
 local CharacterController = require(script.CharacterController)

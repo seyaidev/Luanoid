@@ -1,4 +1,5 @@
-local t = require(script.Parent.Parent.t)
+local Dependencies = require(script.Parent.Dependencies)
+local t = require(Dependencies.t)
 
 local CustomAccessory = t.union(t.instanceIsA("Accessory"), t.instanceIsA("Model"), t.instanceIsA("BasePart"))
 return {

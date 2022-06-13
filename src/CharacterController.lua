@@ -1,6 +1,7 @@
 local RunService = game:GetService("RunService")
 
-local Signal = require(script.Parent.Parent.Signal)
+local Dependencies = require(script.Parent.Dependencies)
+local Signal = require(Dependencies.Signal)
 
 local t = require(script.Parent.Types).CharacterController
 
